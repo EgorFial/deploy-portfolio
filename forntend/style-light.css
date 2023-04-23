@@ -1,0 +1,554 @@
+body{
+    margin: 0%;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+
+
+/* Стили для Хедер Начало*/
+
+
+.header{
+    width: 100%;
+    height: 109px;
+    position: fixed;
+    background-color: #ECECEC;
+    border-bottom: 2px solid black;
+    z-index: 4;
+    
+
+}
+
+
+header:hover{
+    
+    box-shadow: 1px 1px 25px 10px rgba(175, 175, 175, 0.4);
+}
+.header-container{
+    align-items:center;
+    margin: 20px 10% 0px 10%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.container-menu{
+    
+    display: flex;
+    flex-direction: row;
+  margin-left: 25%;
+}
+
+.header-ico{
+    margin: 0px 0px 0px 26px;
+    width: 60px;
+
+}
+
+.navigation-button{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    text-decoration: none;
+}
+
+.container-nav{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Стили для Хедер Конец*/
+
+
+/* Стили для Мейн Начало*/
+.main-content{
+    padding: 109px 10px 0 10px;
+    margin: 0 10% 0 10%;
+    width: 80%;
+}
+
+
+
+.container-main{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.my-photo{
+    margin: 20px 20px 20px 20px;
+    width: 400px;
+    border: 1px solid #000000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my-photo:hover{
+    transform: scale(1.01);
+}
+.main-text:hover::after{
+
+    transform: scale(-1.5);
+}
+.my-photo:active{
+    transform: skew(-3deg, -2deg);
+}
+
+.main-text{
+ padding-left: 100px;
+ padding-right: 60px;
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 62px;
+color: #000000;
+transition: transform 0.3s ease-in-out;
+
+}
+.main-text:hover{
+    transform: skew(0.2deg, 0.5deg);
+}
+
+.main-text:active{
+    transform: skew(1deg, 1deg);
+}
+.main-text:hover::after{
+
+    transform: skew(-0.2deg, -0.5deg);
+}
+
+.hello-text{
+    margin-top: -10px;
+ margin-left: 20px;
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 100px;
+color: #000000;
+transition: transform 0.1s ease-in-out;
+}
+.hello-text:active{
+    transform: skew(3deg, 2deg);
+}
+
+
+/* Стрелки начало*/
+
+.arrow-down {
+    margin: 30px 50px 50px 50px;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #000000;
+    border-right: 5px solid #000000;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* Стрелки конец*/
+.container-arrow{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 30px 10px 30px;
+    justify-content: space-between;
+
+}
+
+
+
+
+/* Стили для Мейн конец*/
+
+
+/* Стили для Cкилс начало*/
+.skills-block{
+
+    margin-bottom: 100px;
+
+}
+
+.skills-header{
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 100px;
+color: #000000;
+margin-left: 40%;
+}
+.skills-content{
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.skills-container{
+    background-color: #ECECEC;
+    border: 2px solid black;
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 44px;
+padding: 3%;
+transition: transform 0.3s ease-in-out;
+
+}
+
+.skills-container:hover{
+
+transform: scale(1.1);
+}
+
+.frontend{
+    margin-top: -50px;
+    width: 300px;
+    height: 350px;
+}
+.backend{
+    margin-top: 50px;
+    height: 300px;
+}
+.other{
+    margin-top: -50px;
+height: 250px;
+}
+
+
+/* Стили для Projects начало*/
+
+.projects-content{
+    font-family: 'Quicksand';
+
+}
+.projects-header{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    color: #000000;
+    margin: 0px 0px 2% 50%;
+}
+
+.projects-conteiner{
+    font-family: 'Quicksand';
+    background-color: #ECECEC;
+    border: 2px solid black;
+    display: flex;
+    
+  justify-content: space-between;
+    margin-bottom: 3%;
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+  
+}
+
+.projects-conteiner:hover{
+
+    transform: scale(1.05);
+}
+
+
+.projects-text{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.left-space{
+
+    margin-left: auto;
+}
+ul{
+   margin-left: 3%;
+    
+}
+.screenshot-project{
+    margin: 25px;
+    width: 500px;
+    height: 320px;
+    border: 2px solid #000000;
+
+}
+.projects-text-header{
+
+    margin: 23px;
+}
+/*Batton Styles*/
+
+.button-bar {
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+  .a-btn {
+    font-family: 'Quicksand';
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .btn {
+    font-family: 'Quicksand';
+    margin: 20px 30px 0px 30px;
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(175, 175, 175, 0.4);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+        transparent,
+        rgba(181, 180, 180, 0.4),
+        transparent);
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+
+  /*Batton Styles end*/
+
+/* Стили для Projects КОНЕЦ*/
+
+
+/* Стили для Contact Начало*/
+.contact-header{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center; 
+}
+
+.contact-conteiner{
+margin: 1% 0 5% 0;
+
+
+}
+.contact-content{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    width: 75%;
+    height: 50vh;
+  
+}
+.mail-number{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.link-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.icon {
+
+    font-size: 150px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+    color:  #636363;
+}
+
+.icon:hover {
+    color: #000000;
+    transform: scale(1.2);
+}
+
+.btn-massage{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 75px;
+    text-align: center;
+    width: 400px;
+    height: 120px;
+    border: 2px solid #000000;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.btn-massage:hover{
+
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+/* анимация для ссылок*/
+.text {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+   
+    text-decoration: none;
+}
+
+.text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #333;
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+/* анимация при наведении на текст */
+.text:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+/* swither theme  */
+.theme-swicher{
+    margin-left: 10%;
+    border: 2px solid #000000;
+    }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+
+
+
+  .foot{
+    margin: 1% 0 1% 1%;
+    font-family: 'Quicksand';
+   color: #000000;
+    
+}
