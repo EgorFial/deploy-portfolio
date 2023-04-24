@@ -45,7 +45,7 @@ closeModalWindow();
 function sendToBackEnd(){
 
 const xhr = new XMLHttpRequest();
-const url = 'http://127.0.0.1:3000/send';
+const url = 'http://127.0.0.1:5000/send';
   
 xhr.open('POST', url);
 xhr.setRequestHeader("Content-Type", "application/json");
